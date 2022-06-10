@@ -7,7 +7,7 @@ alert(`${resultNum}` + ' + 2 = ' + (parseInt(resultNum) + 2)
     + '\n' + `${resultNum}` + ' * 2 = ' + (parseInt(resultNum) * 2)
     + '\n' + `${resultNum}` + ' - 2 = ' + (parseInt(resultNum) - 2)
     + '\n' + `${resultNum}` + ' / 2 = ' + (parseInt(resultNum) / 2));
-console.log('Lenght ' + resultNum.length);
+console.log('Length ' + resultNum.length);
 //alert(`${resultNum}`+' * 2 = '+(parseInt(resultNum) * 2 ));
 //alert(`${resultNum}`+' - 2 = '+(parseInt(resultNum) - 2 ));
 //alert(`${resultNum}`+' / 2 = '+(parseInt(resultNum) / 2 ));
