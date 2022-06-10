@@ -13,7 +13,7 @@ console.log('Length ' + resultNum.length);
 //alert(`${resultNum}`+' / 2 = '+(parseInt(resultNum) / 2 ));
 
 let number = 0.51000002;
-console.log('Rounding a number to two decimal places : ' + parseFloat(number.toFixed(2)) + 2);
+console.log('Rounding a number to two decimal places : ' + (parseFloat(number.toFixed(2)) + 2));
 
 const str = 'the quick brown fox jumps over the lazy dogs back';
 const str_two = 'brown fox jumps';
