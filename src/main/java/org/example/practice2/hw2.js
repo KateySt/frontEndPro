@@ -1,16 +1,13 @@
 const num = 12;
-console.log('Number (' + num + ') in binary : ' + num.toString(2));
-console.log('Number (' + num + ') in hexadecimal : ' + num.toString(16));
+console.log(`Number (${num}) in binary : ` + num.toString(2));
+console.log(`Number (${num}) in hexadecimal : ` + num.toString(16));
 
 let resultNum = window.prompt("Input number", 1);
-alert(`${resultNum}` + ' + 2 = ' + (parseInt(resultNum) + 2)
-    + '\n' + `${resultNum}` + ' * 2 = ' + (parseInt(resultNum) * 2)
-    + '\n' + `${resultNum}` + ' - 2 = ' + (parseInt(resultNum) - 2)
-    + '\n' + `${resultNum}` + ' / 2 = ' + (parseInt(resultNum) / 2));
+console.log(`${resultNum} + 2 = ` + (parseInt(resultNum) + 2)
+    + '\n' + `${resultNum} * 2 = ` + (parseInt(resultNum) * 2)
+    + '\n' + `${resultNum} - 2 = ` + (parseInt(resultNum) - 2)
+    + '\n' + `${resultNum} / 2 = ` + (parseInt(resultNum) / 2));
 console.log('Length ' + resultNum.length);
-//alert(`${resultNum}`+' * 2 = '+(parseInt(resultNum) * 2 ));
-//alert(`${resultNum}`+' - 2 = '+(parseInt(resultNum) - 2 ));
-//alert(`${resultNum}`+' / 2 = '+(parseInt(resultNum) / 2 ));
 
 let number = 0.51000002;
 console.log('Rounding a number to two decimal places : ' + (parseFloat(number.toFixed(2)) + 2));
