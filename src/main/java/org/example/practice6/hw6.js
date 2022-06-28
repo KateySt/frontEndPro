@@ -37,7 +37,7 @@ function createPipe(string) {
 }
 createPipe('some text you like');
 
-
+/*
 function printText(x) {
     return (func) => func(x);
 }
@@ -45,3 +45,20 @@ function printText(x) {
 const str = printText("some text you like");
 str(alert);
 str(console.log);
+*/
+
+const outputConsole = (text) => {
+    console.log(text);
+}
+
+const outputAlert = (text) => {
+    alert(text);
+}
+
+function printStr(str, func) {
+    func(str);
+}
+
+printStr('some text you like',outputConsole);
+printStr('some text you like',outputAlert);
+
