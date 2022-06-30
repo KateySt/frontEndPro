@@ -56,33 +56,33 @@ console.log(r(array));
 const array2 = [0, 2, 4, 5, 7, 10, 2, 35, 6, 10, 3];
 let sum = 0;
 
-function sumTen(arr, ten = 10) {
+function sumTen(arr, ten = 10, n = 0) {
     if (!arr.length) {
-        return sum;
+        return n;
     }
     let t = arr.shift();
-    if (t === ten) {
-        sum += t;
-    }
-    return sumTen(arr);
+
+    return sumTen(arr, 10, (t === ten ? n += t : n));
 }
 
-console.log(sumTen(array2, 10, sum));
+sum = sumTen(array2, 10);
+console.log(sum);
 
 //----------------------------------------------------------------
 
 const array3 = [0, 2, 4, 5, 7, 10, 2, 35, 6, 10, 3];
 let arrayFive = [];
 
-function biggerFive(arr, bigger = 5) {
+function biggerFive(arr, bigger = 5, n = []) {
     if (!arr.length) {
-        return arrayFive;
+        return n;
     }
     let t = arr.shift();
     if (t > bigger) {
-        arrayFive.push(t);
+        n.push(t);
     }
-    return biggerFive(arr);
+    return biggerFive(arr, 5, n);
 }
 
-console.log(biggerFive(array3, 5, arrayFive));
+arrayFive = biggerFive(array3, 5);
+console.log(arrayFive);
