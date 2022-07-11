@@ -35,7 +35,7 @@ function showNumbersR(startNum, endNum, time) {
         console.log(start);
     }, time);
     startNum++;
-    return startNum <= endNum ? showNumbers(startNum, endNum, time) : endNum;
+    return startNum <= endNum ? showNumbersR(startNum, endNum, time) : endNum;
 }
 
 showNumbersR(5, 10, 500); // 5 6 7 8 9 10
