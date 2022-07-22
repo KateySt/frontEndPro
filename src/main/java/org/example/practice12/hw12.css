@@ -1,0 +1,29 @@
+#formDialog {
+    height: 320px;
+    width: 320px;
+    background-color: coral;
+}
+
+form input {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    margin-top: 10px;
+    width: 23%;
+    height: 15px;
+    border: 1px solid black;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+form button {
+    margin-left: 10px;
+}
+
+#palette div {
+    height: 20px;
+    width: 20px;
+}
